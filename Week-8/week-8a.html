@@ -1,0 +1,43 @@
+AV.SC.U4CSE25206-UID 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Rotating Square 360</title> 
+    <style> 
+    body { 
+        margin: 0; 
+        height: 100vh; 
+        display: flex; 
+        flex-direction: column; 
+        justify-content: flex-start; 
+        align-items: center; 
+        background-color: #000; 
+        font-family: Arial, sans-serif; 
+        padding-top: 50px; 
+    } 
+    .square { 
+        width: 120px; 
+        height: 120px; 
+        background: linear-gradient(45deg, #ff6ec4, #7873f5); 
+        border-radius: 12px; 
+        box-shadow: 0 0 20px #ff6ec4, 0 0 40px #7873f5; 
+        animation: rotate 3s linear infinite; 
+    } 
+    @keyframes rotate { 
+        from { 
+            transform: rotate(0deg); 
+        } 
+        to { 
+            transform: rotate(360deg); 
+        } 
+    } 
+    </style> 
+
+</head> 
+
+<body> 
+    <h1 style="color: #fff;">Rotating Square</h1> 
+    <div class="square"></div> 
+</body> 
+
+</html> 

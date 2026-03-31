@@ -1,0 +1,129 @@
+<!DOCTYPE html> 
+
+<html> 
+<head> 
+    <title>My E-commerce Website</title> 
+    <style> 
+        body{ 
+            font-family: Arial, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: black; 
+            color: white;} 
+        .container{ 
+            display: grid; 
+            grid-template-rows: auto auto 1fr auto; 
+            grid-template-columns: 200px 1fr; 
+            grid-template-areas:  
+                "header header" 
+                "sale sale" 
+                "sidebar main" 
+                "footer footer"; 
+            gap: 10px; 
+            padding: 10px; 
+            } 
+        .header{ 
+            grid-area: header; 
+            background-color: navy; 
+            padding: 10px; 
+            text-align: center; 
+            } 
+        .sale{ 
+            grid-area: sale; 
+            background-color: navy; 
+            padding: 10px; 
+            text-align: center;
+             
+            } 
+        .sidebar{ 
+            grid-area: sidebar; 
+            background-color: navy; 
+            padding: 10px; 
+            } 
+        .main{ 
+            grid-area: main; 
+            background-color: navy; 
+            padding: 10px; 
+            display: grid; 
+            grid-template-columns: repeat(2, 1fr); 
+            gap: 10px; 
+            } 
+        .footer{ 
+            grid-area: footer; 
+            background-color: navy; 
+            padding: 10px; 
+            text-align: center;
+            } 
+        .product{ 
+            background-color:lightblue; 
+            padding: 10px; 
+            border-radius: 5px; 
+            text-align: center; 
+            } 
+        .product-image{ 
+            width: 200px; 
+            height: 200px; 
+            } 
+        .button{ 
+            background-color: white; 
+            color: black; 
+            border: 2px solid lightslategray; 
+            padding: 10px 20px; 
+            border-radius: 5px; 
+            } 
+        .button:hover{ 
+            background-color: lightslategray;
+            color: black; 
+            border: 2px solid black; 
+            } 
+    </style> 
+</head> 
+<body> 
+    <div class="container"> 
+        <div class="header"> 
+            <h1>MK Stores</h1> 
+        </div> 
+        <div class="sale"> 
+            <marquee behavior="scroll" direction="left" scrollamount="5">Big Sale! Up to 50% off on selected items. Don't miss out!</marquee>
+        </div> 
+        <div class="sidebar"> 
+            <h2>Categories</h2> 
+            <ul> 
+                <li>Electronics</li> 
+                <li>Clothing</li> 
+                <li>home-appliances</li> 
+                <li>books</li> 
+            </ul> 
+        </div> 
+        <div class="main">
+            <div class="product"> 
+                <img class="product-image" src="https://m.media-amazon.com/images/S/pv-target-images/152e502c1f16c117f5bb5e34c6da2dcdc0bfe3caf48131cbedd3a3ed2f0060ea._SX1080_FMjpg_.jpg" alt="Electronic"> 
+                <h3>Electronics</h3>
+                <p>Price: $29.99</p>
+                <button class="button">Add to Cart</button> 
+            </div> 
+            <div class="product"> 
+                <img class="product-image" src="https://t4.ftcdn.net/jpg/04/77/91/07/360_F_477910771_V79eDAiLQxW4igi1jRTyt77F4Lz3CanP.jpg" alt="Clothing"> 
+                <h3>Clothing</h3> 
+                <p>Price: $9.99</p> 
+                <button class="button">Add to Cart</button> 
+            </div> 
+            <div class="product"> 
+                <img class="product-image" src="https://img.freepik.com/free-vector/household-appliances-realistic-composition_1284-65307.jpg?semt=ais_incoming&w=740&q=80" alt="Home Appliance"> 
+                <h3>Home Appliance</h3> 
+                <p>Price: $19.99</p>
+                <button class="button">Add to Cart</button> 
+            </div> 
+            <div class="product"> 
+                <img class="product-image" src="https://img.freepik.com/free-vector/text-books-library-isolated-icon_24877-83372.jpg?semt=ais_incoming&w=740&q=80" alt="Book"> 
+                <h3>Book</h3> 
+                <p>Price: $4.99</p> 
+                <button class="button">Add to Cart</button> 
+            </div> 
+        </div> 
+        <div class="footer"> 
+            <p>&copy; copyright MK Stores Website. All rights reserved.</p> 
+        </div> 
+    </div> 
+</body> 
+</html> 

@@ -1,0 +1,46 @@
+AV.SC.U4CSE25206-UID 
+<!DOCTYPE html> 
+<html> 
+<head> 
+    <title>Bouncing Ball</title> 
+    <style> 
+    body { 
+        margin: 0; 
+        height: 100vh; 
+        display: flex; 
+        flex-direction: column; 
+        align-items: center; 
+        justify-content: flex-start; 
+        background: #000; 
+        font-family: Arial, sans-serif;
+    } 
+    h1 { 
+        margin-top: 20px; 
+        color: #fff; 
+    } 
+    .ball { 
+        width: 80px; 
+        height: 80px; 
+        background: linear-gradient(45deg, #ff6ec4, #7873f5); 
+        border-radius: 50%; 
+        margin-top: 50px; 
+        animation: bounce 1.5s ease-in-out infinite; 
+    } 
+    @keyframes bounce { 
+        0% { 
+            transform: translateY(0); 
+        } 
+        50% { 
+            transform: translateY(100px); 
+        } 
+        100% { 
+            transform: translateY(0); 
+        } 
+    } 
+    </style> 
+</head> 
+<body> 
+    <h1>Bouncing Ball</h1> 
+    <div class="ball"></div> 
+</body> 
+</html> 
